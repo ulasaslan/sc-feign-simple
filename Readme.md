@@ -1,0 +1,1 @@
+Spring eğitiminde kullandığım örnek Feign uygulaması 
