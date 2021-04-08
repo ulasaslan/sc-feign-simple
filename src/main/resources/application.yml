@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev
+server:
+  error:
+    include-stacktrace: on_trace_param
