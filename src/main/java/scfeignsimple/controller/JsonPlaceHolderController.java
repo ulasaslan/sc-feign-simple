@@ -1,5 +1,6 @@
 package scfeignsimple.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,13 +15,10 @@ import java.util.List;
 
 @RestController
 @Validated
+@RequiredArgsConstructor
 public class JsonPlaceHolderController {
 
     final JsonPlaceHolderClient client;
-
-    public JsonPlaceHolderController(JsonPlaceHolderClient client) {
-        this.client = client;
-    }
 
     @GetMapping("/posts")
     public ResponseEntity<List<Post>> getPosts() {
